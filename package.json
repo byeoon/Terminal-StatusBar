@@ -3,7 +3,8 @@
   "displayName": "Terminal StatusBar",
   "description": "Adds a statusbar to directly access the terminal.",
   "publisher": "Byeoon",
-  "version": "1.0.1",
+  "version": "1.0.0",
+  "repository": "https://github.com/byeoon/terminal-statusbar",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -25,7 +26,10 @@
         "title": "Open",
         "category": "Terminal StatusBar"
       }
-    ]
+    ],
+      "configuration": {
+        "title": "Terminal StatusBar"
+      }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

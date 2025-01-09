@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
 	statusBar.text = `$(terminal-view-icon) Terminal`;
 	statusBar.show();
 
-	const disposable = vscode.commands.registerCommand('terminal-statusbar.about', () => {
+	const about = vscode.commands.registerCommand('terminal-statusbar.about', () => {
 		vscode.window.showInformationMessage('v1.0 - This is the initial release of the plugin! ');
 	});
 
@@ -19,7 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
 		// if shown then hide
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(about);
 	context.subscriptions.push(openStatusBar);
 }
 

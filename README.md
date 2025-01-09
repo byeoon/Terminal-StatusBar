@@ -1,18 +1,14 @@
-# Terminal Statusbar
+# Terminal StatusBar
 
-Adds a shortcut
+Adds a shortcut on the Statusbar to directly access your terminal. This is a pretty lightweight
+VSCode plugin, I will add more stuff soon.
 
 ## Features
+- [x] Initial Function
+- [ ] Select which terminal to open
+- [ ] Click to open **and** close 
+- [ ] Shortcut to kill all terminals
 
-## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-**Enjoy!**
+## Prerequisites
+- VSCode running v180 or higher
