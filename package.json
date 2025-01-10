@@ -3,7 +3,7 @@
   "displayName": "Terminal StatusBar",
   "description": "Adds a statusbar to directly access the terminal.",
   "publisher": "Byeoon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/byeoon/terminal-statusbar",
   "engines": {
     "vscode": "^1.80.0"
@@ -16,20 +16,26 @@
   "contributes": {
     "commands": [
       {
-        "command": "terminal-statusbar.about",
-        "title": "About",
-        "category": "Terminal StatusBar"
-        
-      },
-      {
         "command": "terminal-statusbar.openTerminal",
         "title": "Open",
+        "category": "Terminal StatusBar"
+      },
+      {
+        "command": "terminal-statusbar.about",
+        "title": "About",
         "category": "Terminal StatusBar"
       }
     ],
       "configuration": {
-        "title": "Terminal StatusBar"
+        "title": "Terminal StatusBar",
+      "properties": {
+        "terminal-statusbar.terminalArray": {
+          "type": "integer",
+          "default": 0,
+          "description": "Determines which terminal to open. Use 0 for default."
+        }
       }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

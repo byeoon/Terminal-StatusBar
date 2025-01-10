@@ -1,9 +1,9 @@
-# Change Log
+# Changelog
 
-All notable changes to the "terminal-statusbar" extension will be documented in this file.
+All notable changes to Terminal StatusBar will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [v1.0.1]
 
-## [Unreleased]
-
-- Initial release
+- v1.0.1 Added hover tooltip
+- v1.0.1 Added terminal name on the statusbar
+- v1.0.1 Added a setting to change which terminal opens
