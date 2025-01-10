@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 let statusBar: vscode.StatusBarItem;
-const terminalArray = 0 ?? vscode.workspace.getConfiguration('terminal-statusbar').get('terminalArray');
+const terminalArray = vscode.workspace.getConfiguration('terminal-statusbar').get('terminalArray');
 
 export function activate(context: vscode.ExtensionContext) {
 	const openTerminal = 'terminal-statusbar.openTerminal';
@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	statusBar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
 	statusBar.command = openTerminal;
-	statusBar.text = `$(terminal-view-icon) Terminal (${vscode.window.terminals[terminalArray].name})`;
+	statusBar.text = `$(terminal-view-icon) Terminal (${vscode.window.terminals[0].name})`;
 	statusBar.tooltip = `Opens the first terminal window`;
 	statusBar.show();
 
@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	const openStatusBar = vscode.commands.registerCommand('terminal-statusbar.openTerminal', () => {
-		vscode.window.terminals[terminalArray].show();
+		vscode.window.terminals[0].show();
 		// if shown then hide
 	});
 	context.subscriptions.push(openStatusBar);
