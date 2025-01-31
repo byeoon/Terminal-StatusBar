@@ -3,15 +3,18 @@
   "displayName": "Terminal StatusBar",
   "description": "Adds a statusbar to directly access the terminal.",
   "publisher": "Byeoon",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "repository": "https://github.com/byeoon/terminal-statusbar",
+  "icon": "images/spellIcon.png",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "*"
+],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
