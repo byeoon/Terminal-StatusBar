@@ -5,7 +5,7 @@
   "publisher": "Byeoon",
   "version": "1.0.3",
   "repository": "https://github.com/byeoon/terminal-statusbar",
-  "icon": "images/spellIcon.png",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.80.0"
   },
